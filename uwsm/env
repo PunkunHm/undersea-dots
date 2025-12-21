@@ -1,0 +1,33 @@
+# -----------------------------------------------------
+# UWSM ENVIRONMENT VARIABLES
+# -----------------------------------------------------
+
+# --- Theming & Looks ---
+export XCURSOR_THEME=Bibata-Modern-Ice
+export XCURSOR_SIZE=24
+export HYPRCURSOR_THEME=Bibata-Modern-Ice
+export HYPRCURSOR_SIZE=24
+
+# If Qt apps look broken, change qt6ct to gtk3
+export QT_QPA_PLATFORMTHEME=qt6ct
+export QT_QPA_PLATFORM=wayland
+
+# --- Toolkit Backends ---
+# Forces GTK, SDL, and Clutter apps to use Wayland natively
+export GDK_BACKEND=wayland,x11,*
+export SDL_VIDEODRIVER=wayland
+export CLUTTER_BACKEND=wayland
+
+# --- Electron/Apps ---
+# Tells Discord/VSCode/Obsidian to use Wayland (crisper text)
+export ELECTRON_OZONE_PLATFORM_HINT=auto
+
+# --- NVIDIA / Hardware (ASUS ROG Safe List) ---
+# Hardware video acceleration (Video decoding)
+export LIBVA_DRIVER_NAME=nvidia
+
+# Force GBM backend (usually auto-detected, but safe to enforce)
+export GBM_BACKEND=nvidia-drm
+
+# Fixes flickering in XWayland apps (If Discord crashes, comment this out)
+export __GLX_VENDOR_LIBRARY_NAME=nvidia

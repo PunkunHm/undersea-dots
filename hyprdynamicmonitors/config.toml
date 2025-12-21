@@ -1,0 +1,34 @@
+[general]
+destination = "$HOME/.config/hypr/monitors.conf"
+
+[power_events]
+
+[power_events.dbus_query_object]
+path = "/org/freedesktop/UPower/devices/line_power_AC0"
+
+[[power_events.dbus_signal_match_rules]]
+object_path = "/org/freedesktop/UPower/devices/line_power_AC0"
+
+
+[profiles.Dual-monitor]
+config_file = "/home/purins/.config/hyprdynamicmonitors/hyprconfigs/Dual-monitor.go.tmpl"
+config_file_type = "template"
+[profiles.Dual-monitor.conditions]
+
+[[profiles.Dual-monitor.conditions.required_monitors]]
+description = "Thermotrex Corporation TL134ADXP01-0"
+monitor_tag = "monitor0"
+
+[[profiles.Dual-monitor.conditions.required_monitors]]
+description = "GIGA-BYTE TECHNOLOGY CO. LTD. M27Q P 23233B000216"
+monitor_tag = "monitor1"
+
+
+[profiles.Stand-alone]
+config_file = "/home/purins/.config/hyprdynamicmonitors/hyprconfigs/Stand-alone.go.tmpl"
+config_file_type = "template"
+[profiles.Stand-alone.conditions]
+
+[[profiles.Stand-alone.conditions.required_monitors]]
+description = "Thermotrex Corporation TL134ADXP01-0"
+monitor_tag = "monitor0"
