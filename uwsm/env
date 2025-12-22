@@ -9,7 +9,7 @@ export HYPRCURSOR_THEME=Bibata-Modern-Ice
 export HYPRCURSOR_SIZE=24
 
 # If Qt apps look broken, change qt6ct to gtk3
-export QT_QPA_PLATFORMTHEME=qt6ct
+export QT_QPA_PLATFORMTHEME=gtk3
 export QT_QPA_PLATFORM=wayland
 
 # --- Toolkit Backends ---
