@@ -32,3 +32,21 @@ config_file_type = "template"
 [[profiles.Stand-alone.conditions.required_monitors]]
 description = "Thermotrex Corporation TL134ADXP01-0"
 monitor_tag = "monitor0"
+
+
+[profiles.Sunshine]
+config_file = "/home/purins/.config/hyprdynamicmonitors/hyprconfigs/Sunshine.go.tmpl"
+config_file_type = "template"
+[profiles.Sunshine.conditions]
+
+[[profiles.Sunshine.conditions.required_monitors]]
+description = "Thermotrex Corporation TL134ADXP01-0"
+monitor_tag = "monitor0"
+
+[[profiles.Sunshine.conditions.required_monitors]]
+description = "GIGA-BYTE TECHNOLOGY CO. LTD. M27Q P 23233B000216"
+monitor_tag = "monitor1"
+
+[[profiles.Sunshine.conditions.required_monitors]]
+name = "HDMI-1"
+monitor_tag = "monitor2"
