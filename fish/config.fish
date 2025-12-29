@@ -23,3 +23,9 @@ alias cc claude
 
 # Configure sudo askpass helper
 set -gx SUDO_ASKPASS $HOME/.askpass.sh
+
+# -vs waylandsink: Use Wayland window
+# -avdec: Use software decoding (safest/most stable)
+# -fs: Start in fullscreen (optional)
+# -p 30000 tells it to start allocating ports at 30000
+alias mirror 'uxplay -p 30000 -vs waylandsink -avdec'
