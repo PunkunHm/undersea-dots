@@ -1,12 +1,12 @@
 # TourBox Elite Profile
 # Profile: CLIP STUDIO PAINT
-# Exported: 2025-12-30 22:57:56
+# Exported: 2026-01-20 14:27:25
 
 [profile]
 name = CLIP STUDIO PAINT
 app_id = clipstudiopaint.exe
 window_class = clipstudiopaint.exe
-double_click_timeout = 200
+double_click_timeout = 230
 haptic = off
 haptic_speed = fast
 
@@ -26,6 +26,8 @@ tour = modifier
 short.double = KEY_LEFTSHIFT
 tall.double = KEY_LEFTALT
 top.double = KEY_M
+top.on_release = true
+short.on_release_disabled = true
 
 [modifiers]
 short = modifier
