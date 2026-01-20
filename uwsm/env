@@ -3,15 +3,15 @@
 # -----------------------------------------------------
 
 # --- HARDWARE / GPU ---
-# export LIBVA_DRIVER_NAME=nvidia
-# export GBM_BACKEND=nvidia-drm
-# export __GLX_VENDOR_LIBRARY_NAME=nvidia
+export LIBVA_DRIVER_NAME=nvidia
+export GBM_BACKEND=nvidia-drm
+export __GLX_VENDOR_LIBRARY_NAME=nvidia
 
 # --- Theming & Looks ---
-export XCURSOR_THEME=Bibata-Modern-Ice
-export XCURSOR_SIZE=24
-export HYPRCURSOR_THEME=Bibata-Modern-Ice
+export HYPRCURSOR_THEME=Qogir-Dark
 export HYPRCURSOR_SIZE=24
+export XCURSOR_THEME=Qogir-Dark
+export XCURSOR_SIZE=24
 
 # If Qt apps look broken, change qt6ct to gtk3
 export QT_QPA_PLATFORMTHEME=gtk3
@@ -25,7 +25,7 @@ export CLUTTER_BACKEND=wayland
 
 # --- Electron/Apps ---
 # Tells Discord/VSCode/Obsidian to use Wayland (crisper text)
-export ELECTRON_OZONE_PLATFORM_HINT=auto
+export ELECTRON_OZONE_PLATFORM_HINT=wayland
 
 # -----------------------------------------------------
 # GAMING VARIABLES
